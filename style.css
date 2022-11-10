@@ -1,0 +1,193 @@
+:root {
+    --red: hsl(5, 85%, 63%);
+    --orange: hsl(35, 77%, 62%);
+    --little-text: hsl(236, 13%, 42%);
+    --important-text: hsl(240, 100%, 5%);
+    --line-height: 1.7rem;
+}
+
+body {
+    font-family: Inter;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--little-text);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    height: 10rem;
+    margin: 3rem auto 0 auto;
+
+}
+
+#logo {
+    width: 5rem;
+    height: 3rem;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 32rem;
+    color: var(--little-text);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+ul a:hover {
+    color: var(--red);
+}
+
+main {
+    display: flex;
+    width: 75%;
+    margin: 0 auto 3rem auto;
+    justify-content: space-between;
+}
+
+#main-section-1 {
+    width: 65%;
+}
+
+#main-section-2 {
+    width: 32%;
+}
+
+#main-img {
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+#main-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#h1-container {
+    width: 50%;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 900;
+
+}
+
+#main-article-container {
+    width: 48%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#main-article {
+    line-height: var(--line-height);
+    color: var(--little-text);
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+
+}
+
+#main-button {
+    height: 4rem;
+    width: 13rem;
+    font-size: var(--font-size);
+    letter-spacing: 0.25rem;
+    background-color: var(--red);
+    border: none;
+}
+
+#main-button a {
+    color: white;
+}
+
+#main-button:hover {
+    background-color: var(--important-text);
+}
+
+#main-section-2 {
+    background-color: var(--important-text);
+    color: hsl(233, 8%, 79%);
+    box-sizing: border-box;
+    padding: 0 2rem;
+}
+
+h2 {
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 2rem 0 1.5rem 0;
+}
+
+h3 {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+h3:hover {
+    color: var(--orange);
+}
+
+aside p {
+    line-height: var(--line-height);
+}
+
+hr {
+    height: 0.1rem;
+    border: none;
+    background-color: var(--little-text);
+    margin: 1.5rem 0;
+}
+
+#bottom-section {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    height: 9rem;
+    margin: 5rem auto 10rem auto;
+}
+
+.bottom-div {
+    display: flex;
+    width: 32%;
+}
+
+.bottom-text {
+    margin-left: 2rem;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    color: hsl(233, 8%, 79%);
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--important-text);
+}
+
+h5:hover {
+    color: var(--red);
+}
+
+.bottom-text p {
+    line-height: var(--line-height);
+    color: var(--little-text);
+}
