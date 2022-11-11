@@ -65,6 +65,9 @@ main {
     margin-bottom: 2rem;
 }
 
+#main-img-mobile {
+    display: none;
+}
 #main-info {
     display: flex;
     justify-content: space-between;
@@ -141,13 +144,14 @@ h3:hover {
 
 aside p {
     line-height: var(--line-height);
+    padding-bottom: 1.5rem;
 }
 
 hr {
     height: 0.1rem;
     border: none;
     background-color: var(--little-text);
-    margin: 1.5rem 0;
+    margin-bottom: 1.5rem;
 }
 
 #bottom-section {
@@ -190,4 +194,62 @@ h5:hover {
 .bottom-text p {
     line-height: var(--line-height);
     color: var(--little-text);
+}
+@media (max-width:1439px) {
+    main {
+        flex-direction: column;
+    }
+
+    header,
+    main,
+    #bottom-section {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #main-section-1,
+    #main-section-2 {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    #bottom-section {
+        margin-bottom: 4rem;
+    }
+
+}
+
+@media (max-width:949px) {
+
+    nav {
+        display: none;
+    }
+
+    #main-img {
+        display: none;
+    }
+
+    #main-img-mobile {
+        display: block;
+        margin: 0 auto 2rem auto;
+        width: 100%;
+    }
+
+    #bottom-section,
+    #main-info {
+        flex-direction: column;
+    }
+
+    .bottom-div,
+    #omain-inf,
+    #h1-container,
+    #main-article-container {
+        width: 100%;
+    }
+
+    h1,
+    .bottom-div {
+        margin-bottom: 2rem;
+    }
+
 }
