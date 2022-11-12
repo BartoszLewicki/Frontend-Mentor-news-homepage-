@@ -235,6 +235,7 @@ h5:hover {
         width: 100%;
     }
 
+
     #bottom-section,
     #main-info {
         flex-direction: column;
@@ -247,9 +248,30 @@ h5:hover {
         width: 100%;
     }
 
+    .bottom-div{
+        justify-content: space-between;
+    }
+
     h1,
     .bottom-div {
         margin-bottom: 2rem;
     }
 
+    .bottom-text{
+        width: 60%;
+    }
+
+    .bottom-image {
+        width: 30%;
+        height: fit-content;
+    }
+
+                
+    h4{
+        font-size: 1.5rem;
+    }
+
+    h5{
+        font-size: 1rem;
+    }
 }
