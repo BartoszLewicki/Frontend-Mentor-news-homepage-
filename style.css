@@ -158,7 +158,6 @@ hr {
     display: flex;
     justify-content: space-between;
     width: 75%;
-    height: 9rem;
     margin: 5rem auto 10rem auto;
 }
 
@@ -195,6 +194,11 @@ h5:hover {
     line-height: var(--line-height);
     color: var(--little-text);
 }
+
+.bottom-image{
+    width: 7rem;
+}
+
 @media (max-width:1439px) {
     main {
         flex-direction: column;
@@ -259,14 +263,13 @@ h5:hover {
 
     .bottom-text{
         width: 60%;
+        margin-right: auto;
     }
 
-    .bottom-image {
-        width: 30%;
-        height: fit-content;
+    .bottom-image{
+        margin-left: auto;
     }
-
-                
+             
     h4{
         font-size: 1.5rem;
     }
@@ -275,3 +278,4 @@ h5:hover {
         font-size: 1rem;
     }
 }
+
