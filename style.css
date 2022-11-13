@@ -14,7 +14,6 @@
     display: block;
 }
 
-
 body {
     font-family: Inter;
     font-size: 15px;
@@ -24,7 +23,6 @@ a {
     text-decoration: none;
     color: var(--little-text);
 }
-
 
 header {
     display: flex;
@@ -89,7 +87,6 @@ main {
 h1 {
     font-size: 4rem;
     font-weight: 900;
-
 }
 
 #main-article-container {
@@ -209,6 +206,7 @@ h5:hover {
 }
 
 @media (max-width:1439px) {
+
     main {
         flex-direction: column;
     }
@@ -229,7 +227,6 @@ h5:hover {
     #bottom-section {
         margin-bottom: 4rem;
     }
-
 }
 
 @media (max-width:949px) {
@@ -243,7 +240,6 @@ h5:hover {
         margin: 0 auto 2rem auto;
         width: 100%;
     }
-
 
     #bottom-section,
     #main-info {
@@ -259,7 +255,6 @@ h5:hover {
 
     .bottom-div{
         justify-content: space-between;
-
     }
 
     h1,
@@ -275,6 +270,7 @@ h5:hover {
     .bottom-text p{
         line-height: 1rem;
     }
+
     .bottom-image{
         margin-left: auto;
     }
@@ -288,11 +284,21 @@ h5:hover {
         font-size: 1rem;
         margin-bottom: 0.5rem;
     }
-
-
 }
 
 @media (max-width:700px){
+
+    #overlay{
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #000;
+        opacity: .6;
+        filter: alpha(opacity=60);
+    }
 
     #hamburger-menu{
         display: block;
@@ -300,11 +306,12 @@ h5:hover {
 
     #close-menu{
         position: fixed;
-        z-index: 2;
+        z-index: 4;
         margin-top: -2rem;
     }
 
     #navigation{
+        z-index: 3;
         width: 100vw;
         position: fixed;
         inset: 0 0 0 30%;
