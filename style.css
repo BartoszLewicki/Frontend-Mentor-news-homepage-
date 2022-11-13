@@ -266,16 +266,22 @@ h5:hover {
         margin-right: auto;
     }
 
+    .bottom-text p{
+        line-height: 1rem;
+    }
     .bottom-image{
         margin-left: auto;
     }
              
     h4{
         font-size: 1.5rem;
+        margin-bottom: 0.5rem;
     }
 
     h5{
         font-size: 1rem;
+        margin-bottom: 0.5rem;
     }
+    
 }
 
