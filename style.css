@@ -6,6 +6,15 @@
     --line-height: 1.7rem;
 }
 
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+
 body {
     font-family: Inter;
     font-size: 15px;
@@ -225,10 +234,6 @@ h5:hover {
 
 @media (max-width:949px) {
 
-    nav {
-        display: none;
-    }
-
     #main-img {
         display: none;
     }
@@ -254,6 +259,7 @@ h5:hover {
 
     .bottom-div{
         justify-content: space-between;
+
     }
 
     h1,
@@ -282,6 +288,40 @@ h5:hover {
         font-size: 1rem;
         margin-bottom: 0.5rem;
     }
-    
+
+
 }
 
+@media (max-width:700px){
+
+    #hamburger-menu{
+        display: block;
+    }
+
+    #close-menu{
+        position: fixed;
+        z-index: 2;
+        margin-top: -2rem;
+    }
+
+    #navigation{
+        width: 100vw;
+        position: fixed;
+        inset: 0 0 0 30%;
+        background-color: white;
+        flex-direction: column;
+        justify-content: unset ;
+        padding: 9rem 2rem;
+        font-weight: 500;
+        display: none;
+    }
+
+    li{
+        margin-bottom: 2rem;
+    }
+
+    li a{
+        color: black;
+    }
+
+}
